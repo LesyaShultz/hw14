@@ -1,0 +1,28 @@
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.col {
+  &_2 {
+    width: 50%;
+  }
+}
+
+.btn {
+  @include animate(color border-color);
+
+  display: block;
+  border: 1px solid $yellow;
+  padding: 4px 10px;
+  color: $darkGrey;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $yellow;
+    border-color: $darkGrey;
+  }
+}
